@@ -27,8 +27,6 @@ html {
 }
 
 body {
-  max-width: 1440px;
-  margin: 0 auto;
   font-family: var(--ff-sans-serif);
 }
 
@@ -254,6 +252,11 @@ body {
 }
 
 @media (min-width: 1440px) {
+  body {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
   .logo-image {
     width: 156px;
   }
@@ -269,7 +272,7 @@ body {
 
   .hero__title {
     margin-top: 135px;
-    font-size: 60px;
+    font-size: 56px;
   }
 
   .hero-title {
