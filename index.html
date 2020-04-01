@@ -30,45 +30,55 @@
     </style>
   </head>
   <body>
-    <img class="logo-outside" src="./images/logo.svg" alt="" />
+    <div class="logo-mobile">
+      <img class="logo-image" src="./images/logo.svg" alt="" />
+    </div>
 
     <div class="hero">
       <div class="hero__bg"></div>
       <div class="hero__content">
-        <img class="logo-inside" src="./images/logo.svg" alt="" />
+        <div class="container">
+          <div class="logo-desktop">
+            <img class="logo-image" src="./images/logo.svg" alt="" />
+          </div>
 
-        <h1 class="hero__title">
-          <span class="hero-title hero-title--1">We're</span>
-          <span class="hero-title hero-title--2">coming</span>
-          <span class="hero-title hero-title--3">soon</span>
-        </h1>
+          <h1 class="hero__title">
+            <span class="hero-title hero-title--1">We're</span>
+            <span class="hero-title hero-title--2">coming</span>
+            <span class="hero-title hero-title--3">soon</span>
+          </h1>
 
-        <p class="hero__text">
-          Hello fellow shoppers! We're currently building our new fashion store.
-          Add your email below to stay up-to-date with announcements and our
-          launch deals.
-        </p>
+          <p class="hero__text">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
 
-        <form class="hero__form" id="heroForm">
-          <label class="visually-hidden" for="email">Email Address</label>
-          <input
-            autocomplete="off"
-            class="hero__input"
-            type="text"
-            placeholder="Email Address"
-            id="email"
-            name="email"
-          />
-          <div class="hero__input-message"></div>
-          <img
-            class="hero__input-error-icon"
-            src="./images/icon-error.svg"
-            alt=""
-          />
-          <button type="submit" class="hero__btn" aria-label="submit">
-            <img src="./images/icon-arrow.svg" class="hero__btn-icon" alt="" />
-          </button>
-        </form>
+          <form class="hero__form" id="heroForm">
+            <label class="visually-hidden" for="email">Email Address</label>
+            <input
+              autocomplete="off"
+              class="hero__input"
+              type="text"
+              placeholder="Email Address"
+              id="email"
+              name="email"
+            />
+            <div class="hero__input-message"></div>
+            <img
+              class="hero__input-error-icon"
+              src="./images/icon-error.svg"
+              alt=""
+            />
+            <button type="submit" class="hero__btn" aria-label="submit">
+              <img
+                src="./images/icon-arrow.svg"
+                class="hero__btn-icon"
+                alt=""
+              />
+            </button>
+          </form>
+        </div>
       </div>
     </div>
 

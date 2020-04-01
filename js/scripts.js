@@ -1,11 +1,13 @@
 const heroForm = document.forms.heroForm
 const inputMessage = heroForm.querySelector('.hero__input-message')
+const inputErorrIcon = heroForm.querySelector('.hero__input-error-icon')
 const inputEmail = heroForm.email
 
 const emailPattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 
 const showError = (input, message) => {
   input.classList.add('error')
+  inputErorrIcon.classList.add('show')
   inputMessage.classList.add('show')
   inputMessage.textContent = message
 }
@@ -13,6 +15,7 @@ const showError = (input, message) => {
 const hideError = (input) => {
   setTimeout(() => {
     input.classList.remove('error')
+    inputErorrIcon.classList.remove('show')
     inputMessage.classList.remove('show')
     inputMessage.textContent = ''
   }, 2000)
