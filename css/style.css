@@ -51,8 +51,13 @@ body {
 }
 
 .hero__content {
-  background: url("./../images/bg-pattern-desktop.svg") center/cover no-repeat;
   padding: 65px 30px 90px;
+  background: linear-gradient(
+      90deg,
+      hsla(0, 80%, 86%, 0.38),
+      hsl(0, 74%, 74%, 0.38)
+    ),
+    url("./../images/bg-pattern-desktop.svg") center/cover no-repeat;
 }
 
 .logo-desktop {
@@ -97,7 +102,7 @@ body {
   border: 1px solid var(--clr-desturated-red);
   border-radius: 30px;
   padding: 20px 116px 20px 30px;
-  background: var(--gradient-primary);
+  background: transparent;
   color: var(--dark-grayish-red);
   font-size: 14px;
   font-family: var(--ff-sans-serif);
