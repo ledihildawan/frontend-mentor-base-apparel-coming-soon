@@ -30,7 +30,6 @@ body {
   padding: 30px 30px 60px;
   margin: 0;
   font-family: var(--ff-sans-serif);
-  background: var(--gradient-primary);
 }
 
 .logo-outside {
@@ -202,6 +201,11 @@ body {
   }
 
   .hero__content {
+    background: linear-gradient(
+      -335deg,
+      hsla(0, 74%, 74%, 0.08),
+      hsla(0, 80%, 86%, 0.32)
+    );
     padding: 65px 220px 65px 175px;
   }
 
