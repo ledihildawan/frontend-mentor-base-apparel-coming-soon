@@ -22,7 +22,7 @@ const showSuccess = () => {
   inputEmail.value = ''
   inputMessage.classList.add('show')
   inputMessage.style.color = 'hsl(0, 6%, 24%)'
-  inputMessage.textContent = 'Email has been sended.'
+  inputMessage.textContent = 'Email has been submited.'
 
   hideError(inputEmail)
 }
