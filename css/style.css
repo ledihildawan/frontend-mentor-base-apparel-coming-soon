@@ -52,12 +52,8 @@ body {
 
 .hero__content {
   padding: 65px 30px 90px;
-  background: linear-gradient(
-      90deg,
-      hsla(0, 80%, 86%, 0.38),
-      hsl(0, 74%, 74%, 0.38)
-    ),
-    url("./../images/bg-pattern-desktop.svg") center/cover no-repeat;
+  background: url("./../images/bg-pattern-desktop.svg") center/cover no-repeat,
+    linear-gradient(-135deg, hsla(0, 80%, 86%, 0.16), hsla(0, 74%, 74%, 0));
 }
 
 .logo-desktop {
@@ -99,7 +95,7 @@ body {
 .hero__input {
   width: 100%;
   outline: 0;
-  border: 1px solid var(--clr-desturated-red);
+  border: 1px solid hsla(0, 93%, 68%, 0.24);
   border-radius: 30px;
   padding: 20px 116px 20px 30px;
   background: transparent;
@@ -158,13 +154,13 @@ body {
   width: 64px;
   height: 100%;
   background: var(--gradient-secondary);
-  box-shadow: 0 8px 16px hsla(0, 93%, 68%, 0.37);
+  box-shadow: 0 16px 24px hsla(0, 93%, 68%, 0.24);
   cursor: pointer;
   transition: box-shadow 0.6s ease-in-out;
 }
 
 .hero__btn:hover {
-  box-shadow: 0 8px 16px hsla(0, 93%, 68%, 0.67);
+  box-shadow: 0 16px 24px hsla(0, 93%, 68%, 0.38);
 }
 
 .hero__btn-icon {
@@ -218,10 +214,6 @@ body {
     line-height: 1.315;
   }
 
-  .hero-title {
-    letter-spacing: 16px;
-  }
-
   .hero__text {
     font-size: 16px;
     line-height: 1.5;
@@ -255,11 +247,15 @@ body {
     flex: 0 0 60%;
     padding: 65px 170px 90px;
   }
+
+  .hero-title {
+    font-size: 48px;
+  }
 }
 
 @media (min-width: 1440px) {
   .logo-image {
-    width: 164px;
+    width: 156px;
   }
 
   .hero__bg {
@@ -273,11 +269,11 @@ body {
 
   .hero__title {
     margin-top: 135px;
-    font-size: 48px;
+    font-size: 60px;
   }
 
   .hero-title {
-    letter-spacing: 25px;
+    letter-spacing: 10px;
   }
 
   .hero__text {
