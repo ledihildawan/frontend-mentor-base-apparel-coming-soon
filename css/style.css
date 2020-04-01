@@ -66,11 +66,12 @@ body {
   letter-spacing: 8px;
   font-weight: 400;
   color: var(--dark-grayish-red);
+  font-weight: 600;
 }
 
 .hero-title--1 {
   color: var(--clr-desturated-red);
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .hero__text {
@@ -201,13 +202,17 @@ body {
   }
 
   .hero__content {
-    padding: 65px 170px;
+    padding: 65px 220px 65px 175px;
   }
 
   .hero__title {
     font-size: 48px;
     text-align: left;
     line-height: 1.315;
+  }
+
+  .hero-title {
+    letter-spacing: 25px;
   }
 
   .hero__text {
@@ -244,12 +249,6 @@ body {
 @media (min-width: 1200px) and (min-height: 1081px) {
   .hero__bg {
     height: 1080px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .hero__text {
-    font-size: 18px;
   }
 }
 
