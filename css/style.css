@@ -27,7 +27,7 @@ html {
 }
 
 body {
-  padding: 30px;
+  padding: 30px 30px 60px;
   margin: 0;
   font-family: var(--ff-sans-serif);
   background: var(--gradient-primary);
@@ -194,7 +194,7 @@ body {
   }
 
   .hero__bg {
-    flex: 0 0 50%;
+    flex: 0 0 35%;
     height: 100vh;
     background: url("./../images/hero-desktop.jpg") center/cover no-repeat;
     margin: 0;
@@ -232,6 +232,24 @@ body {
 
   .hero__btn {
     width: 100px;
+  }
+}
+
+@media (max-width: 374px) {
+  .hero__input {
+    padding: 20px 75px 20px 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero__bg {
+    flex: 0 0 50%;
+  }
+}
+
+@media (min-width: 1200px) and (min-height: 1081px) {
+  .hero__bg {
+    height: 1080px;
   }
 }
 
