@@ -197,16 +197,17 @@ body {
     display: flex;
     flex-direction: row-reverse;
     overflow: hidden;
+    height: 100vh;
   }
 
   .hero__content {
     flex: 0 0 60%;
-    padding: 65px 90px 90px;
+    padding: 65px 65px 90px;
   }
 
   .hero__bg {
     flex: 0 0 40%;
-    height: 100vh;
+    height: 100%;
     background: url("./../images/hero-desktop.jpg") center/cover no-repeat;
   }
 
